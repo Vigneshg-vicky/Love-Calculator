@@ -99,7 +99,7 @@ function change() {
       name_2 !== "Cheeru"){
         header.textContent = "Love Calculator results ";
       document.querySelector("#resulttext").textContent = "The result is:";
-      document.querySelector(".num").textContent = "Not acceptable you are My Person!";
+      document.querySelector(".num").textContent = "Not acceptable you are My Person!😤";
       var con = document.querySelectorAll(".container");
       con[0].style.display = "none";
       con[1].style.display = "none";
