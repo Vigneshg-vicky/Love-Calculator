@@ -35,9 +35,6 @@ setInterval("changeColor()", 500);
 var num = Math.floor(Math.random() * 100); // logic to produce random number form 0 to 100
 
 function change() {
-  const button = document.getElementById("btn1");
-  button.style.display = "block";
-
   const names = [
     "See We're Made for each other cheeru😚🥹",
     "I love you so much🥲😚",
@@ -76,6 +73,8 @@ function change() {
         name_2 == "cheeru" ||
         name_2 == "Cheeru"
       ) {
+        const button = document.getElementById("btn1");
+        button.style.display = "block";
         document.querySelector(".nameMale").textContent = name_1;
         document.querySelector(".nameFemale").textContent = name_2;
         header.textContent = "Love Calculator results ";
@@ -87,8 +86,36 @@ function change() {
         con[1].style.display = "none";
         con[2].style.display = "none";
         con[3].style.display = "none";
-        const para = document.querySelector("p");
-        para.style.display = "none";
+      } else {
+        button.style.display = "none";
+        header.textContent = "Love Calculator results ";
+        document.querySelector("#resulttext").textContent = "The result is :";
+        if (
+          name_1 !== "Vignesh" ||
+          name_1 !== "vignesh" ||
+          name_1 !== "vicky" ||
+          name_1 !== "Vicky"
+        ) {
+          document.querySelector(
+            ".num"
+          ).textContent = `Not acceptable you are Vicky's Person!😤`;
+        } else if (
+          name_2 == "Ahalya" ||
+          name_2 == "ahalya" ||
+          name_2 == "cheeru" ||
+          name_2 == "Cheeru"
+        ) {
+          document.querySelector(
+            ".num"
+          ).textContent = `Not acceptable you are Cheeru's Person!😤`;
+        }
+        var con = document.querySelectorAll(".container");
+        con[0].style.display = "none";
+        con[1].style.display = "none";
+        con[2].style.display = "none";
+        con[3].style.display = "none";
+        document.querySelector("p").textContent =
+          "To calculate again refresh the page";
       }
     } else {
       header.textContent = "Love Calculator results ";
