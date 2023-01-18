@@ -43,7 +43,7 @@ function change() {
     "I wanna be with you always and forever Cheeru🥹",
     "Let's be Together Forever babe😚",
     "I can't wait to spend my whole life with you!❤️",
-    "I wanna hold your hand and travel the world with you Cheeru🥹😚"
+    "I wanna hold your hand and travel the world with you Cheeru🥹😚",
   ];
 
   const random = Math.floor(Math.random() * names.length);
@@ -89,36 +89,22 @@ function change() {
         con[1].style.display = "none";
         con[2].style.display = "none";
         con[3].style.display = "none";
-      } else {
-        button.style.display = "none";
+      }else if(name_2 == "Vignesh" ||
+      name_2 !== "vignesh" ||
+      name_2 !== "vicky" ||
+      name_2 !== "Vicky" ||
+      name_2 !== "Ahalya" ||
+      name_2 !== "ahalya" ||
+      name_2 !== "cheeru" ||
+      name_2 !== "Cheeru"){
         header.textContent = "Love Calculator results ";
-        document.querySelector("#resulttext").textContent = "The result is :";
-        if (
-          name_1 !== "Vignesh" ||
-          name_1 !== "vignesh" ||
-          name_1 !== "vicky" ||
-          name_1 !== "Vicky"
-        ) {
-          document.querySelector(
-            ".num"
-          ).textContent = `Not acceptable you are Vicky's Person!😤`;
-        } else if (
-          name_2 == "Ahalya" ||
-          name_2 == "ahalya" ||
-          name_2 == "cheeru" ||
-          name_2 == "Cheeru"
-        ) {
-          document.querySelector(
-            ".num"
-          ).textContent = `Not acceptable you are Cheeru's Person!😤`;
-        }
-        var con = document.querySelectorAll(".container");
-        con[0].style.display = "none";
-        con[1].style.display = "none";
-        con[2].style.display = "none";
-        con[3].style.display = "none";
-        document.querySelector("p").textContent =
-          "To calculate again refresh the page";
+      document.querySelector("#resulttext").textContent = "The result is:";
+      document.querySelector(".num").textContent = "Not acceptable you are My Person!";
+      var con = document.querySelectorAll(".container");
+      con[0].style.display = "none";
+      con[1].style.display = "none";
+      con[2].style.display = "none";
+      con[3].style.display = "none";
       }
     } else {
       header.textContent = "Love Calculator results ";
