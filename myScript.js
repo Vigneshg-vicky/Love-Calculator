@@ -41,6 +41,9 @@ function change() {
     "You're the best thing that has happened to me🥹",
     "Let's get married soon🥹❤️",
     "I wanna be with you always and forever Cheeru🥹",
+    "Let's be Together Forever babe😚",
+    "I can't wait to spend my whole life with you!❤️",
+    "I wanna hold your hand and travel the world with you Cheeru🥹😚"
   ];
 
   const random = Math.floor(Math.random() * names.length);
